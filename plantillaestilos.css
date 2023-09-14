@@ -1,0 +1,109 @@
+/*Lupa de busqueda*/
+body{
+    margin: 0;
+    padding: 0;
+    background: white;
+
+}
+/*Lupa de busqueda*/
+.container{
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
+/*Lupa de busqueda*/
+input{
+    outline: none;
+    box-sizing: border-box;
+    height: 60px;
+    width: 0;
+    padding: 0 20px;
+    color: black;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid orange;
+    transition: all .7s ease;
+
+}
+/*Lupa de busqueda*/
+::placeholder{
+    color: grey
+}
+/*Lupa de busqueda*/
+.btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background: orange;
+    line-height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+/*Lupa de busqueda*/
+.btn i {
+    font-size: 25px;
+    color:  white;
+    line-height: 80px;
+    transition: .5s;
+
+}
+/*Lupa de busqueda*/
+.container:hover input{
+    width: 350px;
+}
+/*Lupa de busqueda*/
+.container:hover i{
+    transform: rotate(-360deg);
+}
+/*Lupa de busqueda*/
+.btn:hover{
+    background: orange;
+}
+/*Centrar imagen del Inicio*/
+
+.caja-presentacion{
+    text-align: center;
+}
+
+/*Pie de pagina*/
+footer{
+    background-color: black;
+    position:static;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    color: white;
+    flex-direction: column;
+}
+/*Simbolo de WPP*/
+.whatsapp{
+    float: right;
+}
+
+
+main{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.contacto{
+    height: 80px;
+
+}
+/*MENU NAVEGACION*/
+.navegacion-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    height: 80px;
+}
+
