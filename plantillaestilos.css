@@ -1,6 +1,11 @@
+body, 
+html{
+    height: 100%;
+    
+}
 /*Lupa de busqueda*/
 body{
-    display: flex;
+    display:flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
@@ -70,18 +75,26 @@ input{
 /*Centrar imagen del Inicio*/
 
 .caja-presentacion{
-    text-align: center;
+    width: 100%;
+    
+
+}
+.caja-presentacion img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 /*Pie de pagina*/
 footer{
     background-color: black;
-    position: static;
+    position: flex;
     bottom: 0;
-    width: 100%;
+   width: 100%;
     height: 150px;
     color: white;
     flex-direction: column;
+    
 }
 /*Simbolo de WPP*/
 .whatsapp{
@@ -120,6 +133,7 @@ main{
     box-sizing: border-box;
 }
 
+
 @media(min-width:450px){
     article{
         width: calc(50% - 5px);
@@ -130,9 +144,9 @@ main{
     article{
 
         width:calc(33% - 5px);
-        
+       
         /*Modelo de caja y como se computan los rellenos*/
-        padding: 10%;
+       padding: 10%;
         
     }
 }
