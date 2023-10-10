@@ -1,5 +1,12 @@
-/*Lupa de busqueda*/
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -7,34 +14,50 @@ body{
     background: white;
 
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.contacto {
+    display: inherit;
+    align-items: center;
+}
+
 /*Lupa de busqueda*/
-.container{
+.container {
     position: absolute;
     left: 50%;
     top: 20%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     padding: 10px;
 }
+
 /*Lupa de busqueda*/
-input{
+input {
     outline: none;
     box-sizing: border-box;
     height: 60px;
     width: 0;
     padding: 0 20px;
-    color:black;
+    color: black;
     border-radius: 50px;
     font-size: 20px;
     border: 1px solid rgb(255, 140, 9);
     transition: all .7s ease;
 
 }
+
 /*Lupa de busqueda*/
-::placeholder{
+::placeholder {
     color: black
 }
+
 /*Lupa de busqueda*/
-.btn{
+.btn {
     position: absolute;
     right: 0;
     top: 0;
@@ -47,34 +70,44 @@ input{
     cursor: pointer;
     transition: .5s;
 }
+
 /*Lupa de busqueda*/
 .btn i {
     font-size: 25px;
-    color:  white;
+    color: white;
     line-height: 80px;
     transition: .5s;
 
 }
+
 /*Lupa de busqueda*/
-.container:hover input{
+.container:hover input {
     width: 350px;
 }
+
 /*Lupa de busqueda*/
-.container:hover i{
+.container:hover i {
     transform: rotate(-360deg);
 }
+
 /*Lupa de busqueda*/
-.btn:hover{
+.btn:hover {
     background: orange;
 }
+
 /*Centrar imagen del Inicio*/
 
-.caja-presentacion{
+.caja-presentacion {
+    max-width: calc(100vw - 20px);
     text-align: center;
 }
 
+.caja-presentacion>img {
+    max-width: 100%
+}
+
 /*Pie de pagina*/
-footer{
+footer {
     background-color: black;
     position: static;
     bottom: 0;
@@ -83,32 +116,33 @@ footer{
     color: white;
     flex-direction: column;
 }
+
 /*Simbolo de WPP*/
-.whatsapp{
+.whatsapp {
     float: right;
     flex-direction: column;
 }
 
 
-main{
+main {
     margin-top: 20px;
     margin-right: 20px;
-    margin-bottom: 20px;
     margin-left: 20px;
-    
-    
+
+
     flex-wrap: wrap;
 }
 
-.contacto{
+.contacto {
     height: 180px;
     margin: 10;
     padding: 10;
     float: right;
 
 }
+
 /*MENU NAVEGACION*/
-.navegacion-menu{
+.navegacion-menu {
     display: flex;
     align-items: center;
     list-style: none;
@@ -116,31 +150,38 @@ main{
     height: 80px;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-@media(min-width:450px){
-    article{
+@media(min-width:450px) {
+    article {
         width: calc(50% - 5px);
         padding: 10px;
     }
 }
-@media (min-width:768px){
-    article{
 
-        width:calc(33% - 5px);
-        
+@media (min-width:768px) {
+    article {
+
+        width: calc(33% - 5px);
+
         /*Modelo de caja y como se computan los rellenos*/
         padding: 10%;
-        
+
     }
 }
 
-.sobre-nosotros{
+.sobre-nosotros {
     width: 100%;
     flex-wrap: wrap;
     gap: 10px;
 
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
