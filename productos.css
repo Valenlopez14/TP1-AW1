@@ -1,25 +1,237 @@
+/*Para poner las fotos  en chico y que se vayan cambiando, en pagina 2.*/
 .product-small-img img{
     width: 100%;
     border: 1px solid rgba(0,0, 0, 2);
-    padding: 8px;
+    padding: 7px;
     margin: 10px 10px 15px;
     cursor: pointer;
 }
+/*Para poner las fotos  en chico y que se vayan cambiando, en pagina 2.*/
 .product-small-img	{
     width: 8%;
     display: flex;
 }
+/*Para poner las fotos  en chico y que se vayan cambiando, en pagina 2.*/
 .img-container img{
     height: 460px;
-
+    
 }
+/*Para poner las fotos  en chico y que se vayan cambiando, en pagina 2.*/
 .img-container{
     padding: 10px;
-    width: 45%;
+    
 }
-
+/*Para poner las fotos  en chico y que se vayan cambiando, en pagina 2.*/
 .info-product{
     font-family: Arial, Helvetica, sans-serif ;
+    padding: 10px;
+    width: 40%;
+    margin: 10px 10px 15px;
+    border: 1px solid rgba(0,1, 3, 2);
+}
+/*Para poner las fotos  en chico y que se vayan cambiando, en pagina 2.*/
+.pagina_productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+/*Para poner las fotos  en chico y que se vayan cambiando, en pagina 2.*/
+.product{
+    width: 50%;
 }
 
-.imagen-muestra{}
+/*Acomoda las fotos de las zapatillas*/
+.zapatilla1{
+    margin: 1rem;
+    height: 425px;
+    width: 400px;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: cover;
+
+
+    color: black;
+}
+/*Acomoda las fotos de las zapatillas*/
+.zapatilla2{
+    margin: 1rem;
+    height: 425px;
+    width: 400px;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: cover;
+
+
+    color: black;
+}
+/*Acomoda las fotos de las zapatillas*/
+.zapatilla3{
+    margin: 1rem;
+    height: 425px;
+    width: 400px;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: cover;
+
+
+    color: black;
+}
+/*Acomoda las fotos de las zapatillas*/
+.zapatilla4{
+    margin: 1rem;
+    height: 425px;
+    width: 400px;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: cover;
+
+
+    color: black;
+}
+/*Acomoda las fotos de las zapatillas*/
+.contenido-imagenes{
+
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en múltiples filas */
+    justify-content: flex-start; /* Inicialmente, muestra las imágenes una al lado de la otra */
+    
+}
+/*Acomoda las fotos de las zapatillas*/
+.contenido-imagenes img {
+    max-width: 100%; /* Asegura que las imágenes no se extiendan más allá del contenedor */
+    height: auto; /* Mantén la relación de aspecto original de las imágenes */
+    margin-right: 10px; /* Espacio entre las imágenes */
+    margin-bottom: 10px; /* Espacio vertical entre las imágenes */
+}
+@media (max-width: 768px) {
+    .image-container {
+        flex-direction: column; /* Cuando la pantalla es más estrecha, muestra las imágenes una debajo de la otra */
+    }
+
+    .image-container img {
+        margin-right: 0; /* Elimina el margen entre las imágenes cuando están apiladas */
+    }
+}
+/*Acomoda las fotos de las remeras*/
+.remera1{
+    margin: 1rem;
+    height: 425px;
+    width: 400px;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: cover;
+
+
+    color: black;
+}
+/*Acomoda las fotos de las remeras*/
+.remera2{
+    margin: 1rem;
+    height: 425px;
+    width: 400px;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: cover;
+
+
+    color: black;
+}
+/*Acomoda las fotos de las remeras*/
+.remera3{
+    margin: 1rem;
+    height: 425px;
+    width: 400px;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: cover;
+
+
+    color: black;
+}
+/*Acomoda las fotos de las remeras*/
+.remera4{
+    margin: 1rem;
+    height: 425px;
+    width: 400px;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: cover;
+
+
+    color: black;
+}
+/*Importa URL desde google fonts para los productos*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@800&family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@800&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+/*Fuentes para los h3*/
+h3{
+    font-family: 'Young Serif', serif;
+}
+/*Fuentes para los h5*/
+h5{
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+/*Fuentes para los h1*/
+
+h1{
+    font-family: 'Gabarito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+/*Fuentes para los links*/
+.links_productos a{
+    color: black;
+    text-decoration: none;
+}
+/*Acomoda las fotos de los abrigos*/
+.abrigos1{
+    margin: 1rem;
+    height: 425px;
+    width: 400px;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: cover;
+
+
+    color: black;
+}
+/*Acomoda las fotos de los abrigos*/
+.abrigos2{
+    margin: 1rem;
+    height: 425px;
+    width: 400px;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: cover;
+
+
+    color: black;
+}
+/*Acomoda las fotos de los abrigos*/
+.abrigos3{
+    margin: 1rem;
+    height: 425px;
+    width: 400px;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: cover;
+
+
+    color: black;
+}
+/*Acomoda las fotos de los abrigos*/
+.abrigos4{
+    margin: 1rem;
+    height: 425px;
+    width: 400px;
+    border-radius: 20px;
+    background-size: 100% 100%;
+    background-repeat: cover;
+
+
+    color: black;
+}
